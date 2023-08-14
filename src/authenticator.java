@@ -5,9 +5,8 @@ public class authenticator {
     	Scanner sc = new Scanner(System.in);
         if (username.equals("Admin") && password.equals("1234")) {
         	System.out.print("\nLoading");
-        	sleepin();
+        	sleeping();
             System.out.print("\n\nLogin successfull");
-            System.out.flush();
             obj.options1();
         }else {
         	System.out.println("\nLogin Failed");
@@ -36,12 +35,12 @@ public class authenticator {
 
     void sign_up(String username, String password) {
     	System.out.print("\nCreating User");
-    	sleepin();
+    	sleeping();
         System.out.println("\nSign-up Successful");
         obj.options1();
     }
     
-    void sleepin() {
+    void sleeping() {
     	try {
     		Thread.sleep(1500);
     		System.out.print(".");
